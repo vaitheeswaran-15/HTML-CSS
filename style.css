@@ -1,0 +1,158 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parent-div{
+    display: flex;
+}
+
+body > div > div.first-div > div.nav-div > div.home-div > img{
+    width: 50px;
+    height: 50px;
+}
+
+.parent-div a{
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+
+.first-div, .second-div{
+    width: 50%;
+    padding: 10px;
+
+}
+
+.first-div{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.second-div{
+    background-color: rgb(225, 96, 74);
+    padding: 20px;
+}
+
+.nav-div{
+    display: flex;
+}
+
+.home-div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.service-div{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-div{
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homepage-content{
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.homepage-content p{
+    font-size: 1.5rem;
+}
+
+.homepage-content > .description > p, body > div > div.second-div > div.image-div > div > p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.app-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.platform-link{
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    padding: 20px;
+}
+.download-link{
+    text-decoration: underline !important;
+}
+
+.downloads{
+    font-size: medium;
+}
+
+.second-div > .signup-div a{
+    background-color: black;
+    width: fit-content;
+    color: white;
+    border-radius: 10%;
+}
+
+.landing-image{
+    height: 512px;
+    width: 512px;
+}
+
+.image-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-img{
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    top: 70%;
+    left: 45.5%;
+}
+
+@media (max-width: 600px){
+    .parent-div{
+        flex-direction: column;
+    }
+    .parent-div a{
+        text-decoration: none;
+        padding: 3px;
+        color: black;
+    }
+    .homepage-content p{
+        font-size: 1.5rem;
+    }
+    .homepage-content > .description > p, body > div > div.second-div > div.image-div > div > p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .first-div, .second-div{
+        width: 130%;
+    
+    }
+    .circle-img{
+        position: absolute;
+        height: 128px;
+        width: 128px;
+        top: 90.5%;
+        left: 52.5%;
+    }
+    .second-div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .second-div > .signup-div a{
+        padding: 10px;
+        text-align: center;
+    }
+}
